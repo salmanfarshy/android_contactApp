@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#27374D"
+        />
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="#537188"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="35dp"
+            android:drawableTop="@drawable/ic_man_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/TextView1"
+            android:background="@color/orange"
+            android:layout_marginHorizontal="10dp"
+            />
+
+    </LinearLayout>
+
+    <!-- Other UI elements -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/circleButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/button_circle"
+        android:clickable="true"
+        android:focusable="true"
+        android:drawableTop="@drawable/ic_plus_icon"
+        android:padding="14dp" />
+
+</RelativeLayout>

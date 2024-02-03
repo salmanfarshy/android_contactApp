@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPerContactActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#27374D"/>
+
+    <TextView
+        android:id="@+id/arrowBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_arrow_back_24"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="57dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="#537188"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableStart="@drawable/ic_man_icon"/>
+
+                <TextView
+                    android:id="@+id/showFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="9dp"
+                    android:text="Firstname"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="27dp"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="9dp"
+                    android:text="Farshy"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="27dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableStart="@drawable/baseline_call_24"/>
+
+                <TextView
+                    android:id="@+id/showPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="01745808660"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Mobile"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
